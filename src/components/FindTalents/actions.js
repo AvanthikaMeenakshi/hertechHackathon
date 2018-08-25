@@ -23,7 +23,6 @@ export const fetchTalents = function () {
     });
     return axios.get('/talents')
       .then(function(response) {
-        console.log(response.data.talents);
         dispatch({
           type: FETCH_TALENTS_SUCCESS,
           receivedAt: Date.now(),

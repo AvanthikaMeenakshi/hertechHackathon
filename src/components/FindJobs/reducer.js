@@ -9,7 +9,6 @@ const initialState = {
 };
 
 const jobsHandler = (state = initialState, action) => {
-  console.log(action)
   switch (action.type) {
     case FETCH_JOBS_REQUEST:
     case FETCH_JOBS_FAILURE:

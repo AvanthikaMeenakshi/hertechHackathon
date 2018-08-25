@@ -14,7 +14,6 @@ class FindTalents extends React.Component {
       this.props.fetchTalents();
     }
     render() {
-      console.log(this.props.talents);
       return (
         <div>
           <SecondaryHeader activeTalents />
