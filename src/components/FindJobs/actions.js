@@ -19,6 +19,7 @@ export const fetchJobs = function () {
   return function (dispatch) {
     dispatch({
       type: FETCH_JOBS_REQUEST,
+      jobs: mockData,
       receivedAt: Date.now()
     });
     return axios.get('/jobs')
@@ -32,6 +33,7 @@ export const fetchJobs = function () {
         dispatch({
           type: FETCH_JOBS_FAILURE,
           receivedAt: Date.now(),
+          jobs: mockData,
           payload: error.toString()
         });
       });

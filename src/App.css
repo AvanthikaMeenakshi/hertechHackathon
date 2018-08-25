@@ -1,4 +1,4 @@
-body{
+html,body{
 	font-family: 'Poppins', sans-serif;
 	font-weight:400;
 	background:#fff;
@@ -239,6 +239,7 @@ textarea::placeholder{
 	right:0;
 	top:0;
 	z-index:99999;
+	background: #FFF;
 }
 
 .site-header-2{
@@ -298,8 +299,8 @@ textarea::placeholder{
 }
 
 .site-header-2 #site-navigation .nav li a{
-	font-size:15px;
-	font-weight:500;
+	font-size: 17px;
+	font-weight:600;
 	padding:15px 0;
 	margin:0 15px;
 	color:#0d0d0d;
@@ -2512,8 +2513,6 @@ textarea::placeholder{
 }
 
 .talent-directory .talent-item .profile-img{
-	width:165px;
-	height:165px;
 	border-radius:100%;
 	margin:0 auto 30px;
 	overflow:hidden;
@@ -2551,12 +2550,14 @@ textarea::placeholder{
 	list-style:none;
 	padding:0;
 	margin: 0 0 30px;
+	height: 80px;
 	text-align:left
 }
 
 .talent-directory .talent-item ul li{
 	font-size:14px;
 	line-height:25px;
+	text-align: center;
 	font-weight:400;
 	color:#0d0d0d;
 }

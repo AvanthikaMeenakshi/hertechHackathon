@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../Header';
+import Footer from '../Footer';
 // Main wrapper for the entire code
 
 class HomePage extends React.Component {
@@ -23,29 +24,29 @@ class HomePage extends React.Component {
         <section className="featured">
           <div className="container">
             <div className="section-header">
-              <h2>Join Us with Millions of Freelancer</h2>
+              <h2>Hire the best talent</h2>
             </div>
             <div className="section-content">
               <div className="row">
                 <div className="col-md-3 col-sm-6 col-xs-12">
                   <img src="images/join-us-img-1.png" alt="joinus" />
                   <h3>Find Talents Easily</h3>
-                  <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam.</p>
+                  <p>FindLancer is an exclusive network of the top freelance software developers, designers, finance experts, and project managers in the world.</p>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12">
                   <img src="images/join-us-img-2.png" alt="hire" />
                   <h3>Build your Career</h3>
-                  <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam.</p>
+                  <p>If you qualify through our screening process, we give you oppurtunity to work with the best companies in the market.</p>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12">
                   <img src="images/join-us-img-3.png" alt="talent" />
-                  <h3>Find Talents Easily</h3>
-                  <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam.</p>
+                  <h3>Be connected with Tech</h3>
+                  <p>Top companies rely on our freelancers for their most important projects. Become one of us today.</p>
                 </div>
                 <div className="col-md-3 col-sm-6 col-xs-12">
                   <img src="images/join-us-img-4.png" alt="work" />
                   <h3>Work From Anywhere</h3>
-                  <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam.</p>
+                  <p>No matter from where it is done, work is work. We encourage working from any location your prefer.</p>
                 </div>
               </div>
             </div>
@@ -75,8 +76,10 @@ class HomePage extends React.Component {
                     <span>Top Level Freelancer Profile</span>
                     Nathan Austin
                   </h2>
-                  <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima.</p>
-                  <a href="/topprofile" className="primary-btn">{"Read Nathans's Story"}</a>
+                  <p>
+                    The dream of building and managing his own company drove Nathan Austin to his goal. After working several hours in his day job, he worked a few more hours on Freelancer to save up for capital. Once his savings were enough, he left his full-time post and began freelancing full-time. Three years later, he is now an established business owner who enjoys his freedom.
+                  </p>
+                  <a href="/findtalents" className="primary-btn">{"Find more like Nathan"}</a>
                 </div>
               </div>
             </div>
@@ -93,7 +96,7 @@ class HomePage extends React.Component {
               <i className="fa fa-twitter" aria-hidden="true"></i>
             </div>
             <div className="section-content">
-                <p>"We can hire engineers who code in different languages than we write internally. Our Pro is one of the best hires weve made. <a href="/">@beHerChange</a>  <a href="/">#beHerChange</a>"</p>
+                <p>"We can hire engineers who code in different languages than we write internally. Our Pro is one of the best hires we've made. <a href="/">@beHerChange</a>  <a href="/">#beHerChange</a>"</p>
             </div>
             <div className="section-footer">
               <img src="images/twitter-profile-img.jpg" alt="angela" />
@@ -134,6 +137,8 @@ class HomePage extends React.Component {
               </div>
             </div>
           </div>
+          <div className="clearfix" />
+          <Footer />
         </div>
       );
     }

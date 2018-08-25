@@ -10,12 +10,6 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
 import './App.css';
 
-const NoMatch = () => (
-  <div>
-    <h3>No match found</h3>
-  </div>
-);
-
 class App extends Component {
   render() {
     return (

@@ -1,6 +1,6 @@
 import axios from 'axios';
 import MockAdapter from 'axios-mock-adapter';
-import { mockData } from './mockData';
+import { userData } from './mockData';
 
 // This sets the mock adapter on the default instance
 var mock = new MockAdapter(axios);
@@ -8,7 +8,7 @@ var mock = new MockAdapter(axios);
 // Mock any GET request to /applications
 // arguments for reply are (status, data, headers)
 mock.onGet('/talents').reply(200, {
-  talents: mockData
+  talents: userData
 });
 
 export const FETCH_TALENTS_REQUEST = 'FETCH_TALENTS_REQUEST';
@@ -21,8 +21,9 @@ export const fetchTalents = function () {
       type: FETCH_TALENTS_REQUEST,
       receivedAt: Date.now()
     });
-    return axios.get('/TALENTS')
+    return axios.get('/talents')
       .then(function(response) {
+        console.log(response.data.talents);
         dispatch({
           type: FETCH_TALENTS_SUCCESS,
           receivedAt: Date.now(),

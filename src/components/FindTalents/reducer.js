@@ -10,11 +10,11 @@ const initialState = {
 
 const talentHandler = (state = initialState, action) => {
   switch (action.type) {
-    case FETCH_TALENTS_REQUEST:
     case FETCH_TALENTS_SUCCESS:
-      return { ...state };
+      return { ...state, talents: action.talents };
+    case FETCH_TALENTS_REQUEST:
     case FETCH_TALENTS_FAILURE:
-      return { ...state, talents: action.jobs }
+      return { ...state }
     default:
       return state;
   }

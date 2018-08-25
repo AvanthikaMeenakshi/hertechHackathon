@@ -21,7 +21,6 @@ class SecondaryHeader extends React.Component {
     								<li><a href="/">Home</a></li>
     								<li className={this.props.activeTalents ? "active" : ""}><a href="/findtalents">Find Talent</a></li>
     								<li className={this.props.active ? "active" : ""}><a href="/findjobs">Find Work</a></li>
-    								<li><a href="/login">Log In</a></li>
     							</ul>
     						</nav>
     					</div>

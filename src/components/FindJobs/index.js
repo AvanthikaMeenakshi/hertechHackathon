@@ -1,13 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { fetchJobs } from './actions';
-import { Icon } from 'semantic-ui-react';
-import SecondaryHeader from '../SecondaryHeader'
-import { skills, jobroles } from './mockData';
+import SecondaryHeader from '../SecondaryHeader';
+import Footer from '../Footer';
+import { skills } from './mockData';
 import { sample } from 'lodash';
 import Avatar from 'react-avatar';
-
-// Main wrapper for the entire code
 
 class FindJobs extends React.Component {
     componentWillMount () {
@@ -42,7 +40,7 @@ class FindJobs extends React.Component {
                             <p>{Math.floor(Math.random() * 90 + 10)} Applicants</p>
                           </div>
                           <div className="apply-info">
-                            <a href="#" className="primary-btn">Apply this Job</a>
+                            <a href="javascript:void(0)" className="primary-btn">Apply this Job</a>
                           </div>
                         </div>)
                       })}
@@ -51,21 +49,11 @@ class FindJobs extends React.Component {
               </div>
             </div>
           </div>
+          <Footer />
       </div>
       );
     }
 }
-
-// <div className="section-header">
-//   <h2>Find Work</h2>
-//   <div className="job-filter">
-//     <h3>Filter</h3>
-//     <input className="job-position" type="text" placeholder="Keywords (e.g. Job Title, Position...)" />
-//     <input className="job-location" type="text" placeholder="Location" />
-//     <a href="#">Apply this Filter</a>
-//   </div>
-// </div>
-
 
 const mapStateToProps = state => ({
   jobList: state.jobsHandler.jobs

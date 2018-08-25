@@ -10,7 +10,7 @@ class Header extends React.Component {
           			<div className="site-branding">
           				<h1 className="site-title">
           					<a href="/" title="findlancer" rel="home">
-          						<img src="images/logo.png" alt="logo" />
+          						<img src="images/logo-2.png" alt="logo" />
           					</a>
           				</h1>
           			</div>
@@ -21,7 +21,6 @@ class Header extends React.Component {
                     <li><a href="/">Home</a></li>
                     <li><a href="/findtalents">Find Talent</a></li>
                     <li><a href="/findjobs">Find Work</a></li>
-                    <li><a href="/login">Log In</a></li>
           				</ul>
           			</nav>
           		</div>
