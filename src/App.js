@@ -3,11 +3,18 @@ import {
   Route
 } from 'react-router-dom';
 import FindJobs from './components/FindJobs';
-import HomePage from './components/HomePage'
+import HomePage from './components/HomePage';
+import FindTalents from './components/FindTalents';
 import 'semantic-ui-css/semantic.css';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap-theme.css';
+import './App.css';
+
+const NoMatch = () => (
+  <div>
+    <h3>No match found</h3>
+  </div>
+);
 
 class App extends Component {
   render() {
@@ -15,6 +22,7 @@ class App extends Component {
       <div>
         <Route exact path={`/`} component={HomePage} />
         <Route exact path={`/findjobs`} component={FindJobs} />
+        <Route exact path={`/findtalents`} component={FindTalents} />
       </div>
     );
   }

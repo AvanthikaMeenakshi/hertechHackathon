@@ -1,12 +1,12 @@
 import React from 'react';
-
+import Header from '../Header';
 // Main wrapper for the entire code
 
 class HomePage extends React.Component {
     renderHeroImageSection = () => {
       return (
         <section className="hero">
-          <img src="images/hero-img.jpg" alt="hero" />
+          <img src="images/hero-img.jpeg" alt="hero" />
           <div className="section-content">
             <div className="container">
               <h2><strong>Hire expert freelancers <br />for any job, online & </strong> Get Your Job Done</h2>
@@ -125,6 +125,7 @@ class HomePage extends React.Component {
           <div className="site-content content-wrapper page-content">
             <div className="page type-page hentry">
               <div className="page-content-body">
+                <Header />
                 {this.renderHeroImageSection()}
                 {this.renderHireSection()}
                 {this.renderTopProfile()}

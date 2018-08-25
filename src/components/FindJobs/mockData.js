@@ -1,3 +1,7 @@
+export const skills = ["Node.js", "Machine Learning", "MySQL", "Cryptography", "Blockchain", "Deep learning", "Assisted reality and virtual reality", "PhP", "HTML", "CSS", "Java", "JavaScript", "C", "C++", "Python", "MongoDB", "Android App", "IOT", "ChatBots", "OpenCV", "Cloud Computing"];
+
+export const jobroles = ["Data scientist", "Entry-level engineer", "UX designer", "Quality assurance", "Salesforce developer", "Security analyst", "Full stack developer", "Mobile Developer", "Web Developers", "Programmer", "Network Engineer", "Graphic Designer", "3D/2D Animator", "Designer", "Social Media Expert", "Animator", "Backend Developer"];
+
 export const mockData = [
 	{
 		"id": 1,

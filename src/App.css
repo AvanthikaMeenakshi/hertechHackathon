@@ -281,11 +281,11 @@ textarea::placeholder{
 }
 
 .site-header #site-navigation .nav li a{
-	font-size:15px;
-	font-weight:500;
+	font-size:17px;
+	font-weight:600;
 	padding:15px 0;
 	margin:0 15px;
-	color:#fff;
+	color:#000;
 	background:none;
 	letter-spacing:0;
 	transition:all .3s;
@@ -294,7 +294,7 @@ textarea::placeholder{
 
 .site-header #site-navigation .nav li:hover a,
 .site-header #site-navigation .nav li.active a{
-	border-bottom:2px solid #fff
+	border-bottom:2px solid #000;
 }
 
 .site-header-2 #site-navigation .nav li a{
@@ -366,7 +366,7 @@ textarea::placeholder{
 }
 
 .hero .section-content h2{
-	color:#fff;
+	color:#000;
 	font-size:60px;
 	line-height:70px;
 	margin:0 0 50px;
@@ -376,7 +376,7 @@ textarea::placeholder{
 .hero .section-content h2 strong{
 	font-weight:600;
 	display:block;
-	color:#fff
+	color:#000
 }
 
 /*--------------------------------------------------------------
@@ -2177,7 +2177,6 @@ textarea::placeholder{
 
 .find-work .section-content{
 	margin:0 0 30px;
-	display:inline-block
 }
 
 .find-work .section-content .job-item{
@@ -2246,20 +2245,21 @@ textarea::placeholder{
 	margin:0;
 	padding:0;
 	list-style:none;
+	line-height: 20px;
 }
 
 .find-work .job-item .job-info ul li{
 	display:inline-block;
-	margin:0 40px 0 0;
-	font-size:14px;
+	margin:0 10px 0 0;
+	font-size:13px;
 	line-height:14px;
-	color:#0d0d0d;
+	color:#7b7b7b;
 	font-weight:300;
 }
 
 .find-work .job-item .job-info ul li i{
 	margin:0 10px 0 0;
-	color:#7b7b7b
+	color:#6542e0;
 }
 
 .find-work .job-item .applicants-info{
@@ -2312,6 +2312,11 @@ textarea::placeholder{
 .job-detail-hero  .company-info a{
 	font-size:14px;
 	color:#7b7b7b
+}
+
+.required_for {
+	margin-bottom: 15px;
+	letter-spacing: 0.8px;
 }
 
 .job-detail-hero .company-info img{
@@ -2554,6 +2559,12 @@ textarea::placeholder{
 	line-height:25px;
 	font-weight:400;
 	color:#0d0d0d;
+}
+
+.primary-btn {
+	font-weight: bold !important;
+	font-size: 13px !important;
+	letter-spacing: 1.5px !important;
 }
 
 .talent-directory .talent-item .primary-btn{
@@ -3356,7 +3367,10 @@ textarea::placeholder{
 
 	.find-work .job-item .job-info ul li{
 		margin:0 0 10px;
-		display:block
+		display:block;
+		font-size: 13px;
+		letter-spacing: 0.8px;
+		color: #7D7D7D;
 	}
 
 	.find-work .job-item .job-info ul li:last-child{

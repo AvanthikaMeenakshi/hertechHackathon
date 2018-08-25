@@ -7,30 +7,30 @@ var mock = new MockAdapter(axios);
 
 // Mock any GET request to /applications
 // arguments for reply are (status, data, headers)
-mock.onGet('/jobs').reply(200, {
-  jobs: mockData
+mock.onGet('/talents').reply(200, {
+  talents: mockData
 });
 
-export const FETCH_JOBS_REQUEST = 'FETCH_JOBS_REQUEST';
-export const FETCH_JOBS_SUCCESS = 'FETCH_JOBS_SUCCESS';
-export const FETCH_JOBS_FAILURE = 'FETCH_JOBS_FAILURE';
+export const FETCH_TALENTS_REQUEST = 'FETCH_TALENTS_REQUEST';
+export const FETCH_TALENTS_SUCCESS = 'FETCH_TALENTS_SUCCESS';
+export const FETCH_TALENTS_FAILURE = 'FETCH_TALENTS_FAILURE';
 
-export const fetchJobs = function () {
+export const fetchTalents = function () {
   return function (dispatch) {
     dispatch({
-      type: FETCH_JOBS_REQUEST,
+      type: FETCH_TALENTS_REQUEST,
       receivedAt: Date.now()
     });
-    return axios.get('/jobs')
+    return axios.get('/TALENTS')
       .then(function(response) {
         dispatch({
-          type: FETCH_JOBS_SUCCESS,
+          type: FETCH_TALENTS_SUCCESS,
           receivedAt: Date.now(),
-          jobs: response.data.jobs
+          talents: response.data.talents
         });
       }).catch((error) => {
         dispatch({
-          type: FETCH_JOBS_FAILURE,
+          type: FETCH_TALENTS_FAILURE,
           receivedAt: Date.now(),
           payload: error.toString()
         });
